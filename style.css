@@ -1,35 +1,55 @@
 /* homr page html*/
-nav>li{
-    
-    list-style-type: none;
-    
+header{
+    background: linear-gradient(rgb(45, 44, 44),rgb(14, 15, 14));
+    height: 1050px;
+    width: auto;
+}
+header>.img1>img{
+    height: 600px;
+    float: right;
+    clear: both;
+}
+header>.img1{
+    height: 600px;
+    width:1400px;
+    box-shadow:3px 9px 4px 7px;
+    clear: both;
+    float: right;
+
 }
 li>a{
-    color:white;
-
+    text-decoration: none;
+    color: white;
 }
-nav{
+header>nav{
     display: flex;
-    gap: 40px;
-    justify-content: end;
-    align-items: center;
-    height: 60px;
-
+    justify-content: center;
+    gap: 20px;
+    font-size: large;
+    padding-top: 5px;
 }
-header{
-    height: 60px;
-    width: auto;
-    background: linear-gradient(rgb(69, 55, 55),rgb(105, 88, 88));
-    
-}
-.svg{
-    height: 60px;
-    width: 50px;
+header>h1{
     float: left;
+    color: white;
 }
-nav>li:hover{
-background-color: rgb(172, 247, 247);
+header>div{
+    float: right;
 }
+nav>li{
+list-style-type:none;
+}
+
+div>button{
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: #65bbfc;
+    color: white;
+}
+
+
+
+
 
 /* login page css */
 .loginBackground{
