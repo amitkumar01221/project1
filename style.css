@@ -3,8 +3,8 @@
 
 
     header{
-        background: linear-gradient(to right ,rgb(15, 14, 14),rgb(76, 78, 76));
-        height: 900px;
+        background: linear-gradient(to bottom right ,rgb(15, 14, 14),rgb(76, 78, 76));
+        height: 740px;
         
     }
     header>.navbardiv{
@@ -18,14 +18,17 @@
     header>.img1>img{
         height: 400px;
         width: 390px;
+    
         
     }
     header>.img1{
         
-        box-shadow:3px 9px 4px 7px;
+        box-shadow:3px 0px 01px 0px;
         flex-wrap: wrap;
         height: auto;
         width: 390px;
+        bottom: 20px;
+        position: absolute;
     }
     header>.navbardiv>h1{
         color: white;
@@ -63,7 +66,8 @@
     .img1>.divcontent{
         
         width: 390px;
-        margin-left: 0px;text-align: center;
+        margin-left: 0px;
+        text-align: center;
         color: white;
         
     }
@@ -71,13 +75,14 @@
     color:red;
     }
     
-    div>button{
+    .loginbutton>button{
         height: 40px;
         width: 90px;
         border-radius: 30px;
         background: linear-gradient(to right, rgb(15, 14, 14),rgb(76, 78, 76));
         color: white;
-        margin: 0px 0px 0px 150px;
+        margin: 0px 0px 0px 140px;
+        
         
         
        
@@ -115,12 +120,87 @@
         width: 80%;
     }
     to{width: 100%;}
+
 }
 
+/* section 1*/
+.section1{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(197, 200, 202);
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+.section1>.images{
+    border: 1px solid red;
+    height: 260px;
+    width: 220px;
+    display: inline-block;
+    margin:  60px 40px;
+    
+
+}
+.section1>.images>.imagecontent{
+    height: 80px;
+    width: 100%;
+    background-color: palevioletred;
+}
+.section1>.images>.imagecontent>button{
+    height: 40px;
+    width: 90px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(15, 14, 14),rgb(76, 78, 76));
+    color: white;
+    margin: 15px 0px 0px 60px;
+    
+}
+/*footer css*/
+footer>.sociallink{
+    height: auto;
+    width: auto;
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    
+
+
+}
+footer>.sociallink>a>svg{
+    margin-left: 9px;
+
+
+}
+footer>.copyrightdisclaimer{
+    clear: both;
+    text-align: center;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    align-items: center;
+}
+footer>form>input{
+    margin-bottom: 10px;
+    outline: none;
+
+    
+}
+footer>form{
+    text-align: center;
+}
+
+footer>form>.send{
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
 }
 /* destop css use media */
 
-@media only screen and (min-width:500px){
+@media only screen and (min-width:480px){
 header{
     background: linear-gradient(to right ,rgb(61, 60, 60),rgb(14, 15, 14));
     height: 1050px;
