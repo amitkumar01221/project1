@@ -1,9 +1,9 @@
 /* homr page html*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-device-width:480px) {
 
 
     header{
-        background: linear-gradient(to right ,rgb(56, 56, 56),rgb(140, 195, 140));
+        background: linear-gradient(to right ,rgb(15, 14, 14),rgb(76, 78, 76));
         height: 900px;
         
     }
@@ -33,6 +33,12 @@
         margin-left: 10px;
        
     }
+    header>.navbardiv>h1::first-letter{
+        font-family:serif;
+        color: red;
+        font-size: 40px;
+        text-shadow: 0px 0px 8px  rgb(236, 236, 234);
+    }
     
     li>a{
         text-decoration: none;
@@ -47,8 +53,6 @@
         
     }
  
-    
-  
     header>div{
         float: left;
     
@@ -57,15 +61,14 @@
     list-style-type:none;
     }
     .img1>.divcontent{
-        background-color: rgb(212, 212, 36);
+        
         width: 390px;
-        margin-left: 0px;
-        flex-wrap: wrap;
+        margin-left: 0px;text-align: center;
+        color: white;
         
-        
-        
-        
-    
+    }
+    .img1>.divcontent>h1{
+    color:red;
     }
     
     div>button{
@@ -74,8 +77,8 @@
         border-radius: 30px;
         background: linear-gradient(to right, rgb(15, 14, 14),rgb(76, 78, 76));
         color: white;
-        margin: 0px 0px 0px 0px;
-        right: right
+        margin: 0px 0px 0px 150px;
+        
         
        
     }
@@ -86,12 +89,38 @@
         font-size: large;
         padding-top: 10px;
         clear: both;
+        overflow: hidden;
       
     
-}}
+}.divcontent>.heading{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:red;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 4px solid;
+    white-space: nowrap;
+    text-wrap: wrap;
+    overflow: hidden;
+    animation: typing 4.5s steps(30),
+         cursor 0.5s step-end infinite alternate;
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+   
+    
+}
+@keyframes typing {
+    from {
+        width: 80%;
+    }
+    to{width: 100%;}
+}
+
+}
 /* destop css use media */
 
-@media only screen and (min-width:510px){
+@media only screen and (min-width:500px){
 header{
     background: linear-gradient(to right ,rgb(61, 60, 60),rgb(14, 15, 14));
     height: 1050px;
@@ -168,7 +197,7 @@ div>button:hover{
     margin: 110px 70px;
     
 
-}}
+}
 .divcontent>.heading{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -193,7 +222,7 @@ div>button:hover{
     to{width: 100%;}
 }
 
-
+}
 
 
 
