@@ -22,8 +22,6 @@
         
     }
     header>.img1{
-        
-        box-shadow:3px 0px 01px 0px;
         flex-wrap: wrap;
         height: auto;
         width: 390px;
@@ -125,38 +123,61 @@
 
 /* section 1*/
 .section1{
-    height: 400px;
+    height: 480px;
     width: 100%;
-    background-color: rgb(197, 200, 202);
+    background: linear-gradient(to bottom right ,rgb(49, 48, 49),rgb(88, 91, 78));
     white-space: nowrap;
     overflow-x: auto;
     
 }
+.section1 div h1{
+    color: white;
+    margin-left: 20px;
+}
+
 .section1>.images{
-    border: 1px solid red;
-    height: 260px;
-    width: 220px;
+    height: 360px;
+    width: 290px;
     display: inline-block;
-    margin:  60px 40px;
+    margin:  20px 0px 0px 20px;
+    border-radius: 10px;
     
 
 }
 .section1>.images>img{
-    height: 190px;
+    height: 320px;
     width: 100%;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 3px 4px 2px rgb(71, 45, 45);
 }
 .section1>.images>.imagecontent{
-    height: 70px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
     width: 100%;
-    background-color: palevioletred;
+    align-content: end;
+    text-align: end;
+}
+.imagecontent .price{
+    font-weight: bolder;
+    font-size:large;
+    color:red;
+    padding-right: 90px;
+    word-spacing: 0px;
+    letter-spacing: 1px;
 }
 .section1>.images>.imagecontent>button{
-    height: 40px;
-    width: 90px;
+    height: 35px;
+    width: 99px;
     border-radius: 30px;
     background: linear-gradient(to right, rgb(15, 14, 14),rgb(76, 78, 76));
     color: white;
-    margin: 15px 0px 0px 60px;
+    letter-spacing: 3px;
+    font-size: larger;
+    font-style: initial;
+    font-weight: bold;
     
 }
 /*footer css*/
@@ -204,21 +225,27 @@ footer>form>.send{
 }
 /* destop css use media */
 
-@media only screen and (min-width:480px){
+@media only screen and (min-width:480px) and (max-width:1440px){
 header{
     background: linear-gradient(to right ,rgb(61, 60, 60),rgb(14, 15, 14));
-    height: 1050px;
-    width: auto;
+    height:600px;
+    width: 100%;
 }
 header>.navbardiv{
     justify-content: space-between;
     display: flex;
-  
-    width: 1405px;
+    width: 100%;
     align-items: center;
    
 
 }
+header>.navbardiv>h1::first-letter{
+    font-family:serif;
+    color: red;
+    font-size: 40px;
+    text-shadow: 0px 0px 8px  rgb(236, 236, 234);
+}
+
 header>.img1>img{
     height: 600px;
     
@@ -226,7 +253,7 @@ header>.img1>img{
 header>.img1{
     height: 600px;
     width:1400px;
-    box-shadow:3px 9px 4px 7px;
+    box-shadow:3px 9px 4px 7px;box-shadow:3px 9px 4px 7px;
 }
 li>a{
     text-decoration: none;
@@ -304,6 +331,115 @@ div>button:hover{
         width: 0
     }
     to{width: 100%;}
+}
+/* section 1*/
+.section1{
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(to bottom right ,rgb(49, 48, 49),rgb(88, 91, 78));
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+.section1 div h1{
+    color: white;
+    margin-left: 20px;
+}
+
+.section1>.images{
+    height: 560px;
+    width: 490px;
+    display: inline-block;
+    margin:  20px 0px 0px 20px;
+    border-radius: 10px;
+    
+
+}
+.section1>.images>img{
+    height: 520px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 3px 4px 2px rgb(71, 45, 45);
+}
+.section1>.images>.imagecontent{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    width: 100%;
+    align-content: end;
+    text-align: end;
+}
+.imagecontent .price{
+    font-weight: bolder;
+    font-size:large;
+    color:red;
+    padding-right: 90px;
+    word-spacing: 0px;
+    letter-spacing: 1px;
+}
+.section1>.images>.imagecontent>button{
+    height: 35px;
+    width: 99px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(15, 14, 14),rgb(76, 78, 76));
+    color: white;
+    letter-spacing: 3px;
+    font-size: larger;
+    font-style: initial;
+    font-weight: bold;
+    
+}
+/*footer css*/
+footer>.sociallink{
+    height: auto;
+    width: auto;
+    float: right;
+    margin-right: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    
+
+
+}
+footer>.sociallink>a>svg{
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+
+
+}
+footer>.copyrightdisclaimer{
+    clear: both;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(35, 35, 216);
+    color: white;
+    align-items: center;
+}
+footer>form>input{
+    margin-bottom: 10px;
+    outline: none;
+    height: 20px;
+    width: 250px;
+    border-radius: 10px;
+
+    
+}
+footer h3{
+    font-size: large;
+    font-weight: bold;
+
+}
+
+footer>form>.send{
+    text-align: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    background-color: rgb(31, 30, 30);
 }
 
 }
